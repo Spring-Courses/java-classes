@@ -1,7 +1,5 @@
 package com.hocinebouarara;
 
-import java.util.Locale;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -14,8 +12,8 @@ public class Main {
 //        textBox2.setText("last name textBox");
 
         Employee employee = new  Employee();
-        employee.baseSalary = 45_000;
-        employee.hourlyRate = 20;
+        employee.setBaseSalary(-1);
+        employee.setHourlyRate(20);
         int wage = employee.calculateWage(10);
 
         System.out.println(wage);
